@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Click Me</button>
+    <p id="message">Waiting...</p>
+<script type="text/javascript">
+    let btn1=document.getElementById("btn1");
+    console.log(btn1)
+    let text=document.getElementById("message");
+    btn1.addEventListener('click',()=>{
+        text.textContent="button clicked";
+        setTimeout(()=>{
+            text.textContent="thanks for clicking"
+
+        },2000)
+    })
+</script>
+
+</body>
+
+
+</html>
